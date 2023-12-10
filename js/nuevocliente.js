@@ -1,3 +1,6 @@
+import { mostrarAlerta } from './funciones.js';
+import { nuevoCliente } from './API.js'
+
 (function(){
     const formulario = document.querySelector('#formulario')
     formulario.addEventListener('submit', validarCliente)
@@ -19,10 +22,10 @@
          }
 
         if( validar(cliente) ) {
-            console.log('no validado') 
+            mostrarAlerta('no validado') 
             return
         }
-        console.log('validado')
+        nuevoCliente(cliente)
     }
 
     function validar(obj){
