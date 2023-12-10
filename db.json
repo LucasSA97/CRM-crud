@@ -1,32 +1,18 @@
 {
   "clientes": [
     {
-      "nombre": "Juan NUEVO!",
-      "email": "correo2@correo.com",
-      "telefono": "12",
-      "empresa": "12212",
-      "id": 26
-    },
-    {
-      "nombre": "Lucas agustin",
+      "nombre": "Lucas ",
       "email": "lucassarachu7@gmail.com",
       "telefono": "659016094",
-      "empresa": "Henry",
+      "empresa": "HP",
       "id": 27
-    },
-    {
-      "nombre": "lucas",
-      "email": "lucassarachu7@gmail.com",
-      "telefono": "02215487890",
-      "empresa": "E-AZY",
-      "id": 28
     },
     {
       "nombre": "sandra",
       "email": "sandra@gmail.com",
-      "telefono": "659016094",
-      "empresa": "asda",
-      "id": 29
+      "telefono": "02215487890",
+      "empresa": "E-AZY",
+      "id": 28
     }
   ]
 }

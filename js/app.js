@@ -1,9 +1,11 @@
-import { obtenerClientes } from "./API.js"
+import { obtenerClientes, deleteUser } from "./API.js"
 
 (function() {
     const userList = document.querySelector('#listado-clientes')
 
     document.addEventListener('DOMContentLoaded', mostrarClientes)
+
+    document.addEventListener('click', deleteConfirm)
 
    async function mostrarClientes(){
         const clientes = await obtenerClientes()
@@ -29,8 +31,18 @@ import { obtenerClientes } from "./API.js"
             `;
 
             userList.appendChild(row)
-        })
 
+        })
+    }
+
+    async function deleteConfirm(e){
+        if(e.target.classList.contains('eliminar')){
+             const clientId = parseInt(e.target.dataset.cliente)
+             const confirmar = confirm('Eliminar registro')
+                if(confirmar) {
+                    deleteUser(clientId)
+                }
+        }
     }
 
 })()
